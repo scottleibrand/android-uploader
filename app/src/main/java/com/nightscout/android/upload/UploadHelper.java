@@ -242,6 +242,18 @@ public class UploadHelper extends AsyncTask<EGVRecord, Integer, Long> {
                     testData.put("dateString", record.displayTime);
                     testData.put("sgv", record.bGValue);
                     testData.put("direction", record.trend);
+                    testData.put("rawbg", record.raw);
+                    testData.put("filterbg", record.filtered);
+                    testData.put("slope", record.slope);
+                    testData.put("intercept", record.intercept);
+                    testData.put("rssi", record.rssi);
+                    testData.put("decay", record.decay);
+                    testData.put("noise", record.noise);
+                    testData.put("scale", record.scale);
+                    testData.put("tnow", record.tnow);
+                    testData.put("tcal", record.tcal);
+
+
                     dexcomData.update(testData, testData, true, false, WriteConcern.UNACKNOWLEDGED);
                 }
 
