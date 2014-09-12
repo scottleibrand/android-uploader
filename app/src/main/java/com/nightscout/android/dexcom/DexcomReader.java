@@ -639,12 +639,7 @@ public class DexcomReader extends AsyncTask<UsbSerialDriver, Object, Object>{
                 }
 
                 this.trend = trend;
-                DateFormat df = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ssZ") {
-                    public StringBuffer format(Date date, StringBuffer toAppendTo, java.text.FieldPosition pos) {
-                        StringBuffer toFix = super.format(date, toAppendTo, pos);
-                        return toFix.insert(toFix.length()-2, ':');
-                    };
-                };
+                DateFormat df = new SimpleDateFormat("MM/dd/yyy hh:mm:ss aa");
                 this.displayTime = df.format(display);
                 this.bGValue = String.valueOf(bGValue);
 
