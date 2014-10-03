@@ -1,5 +1,6 @@
 android-uploader
 ====================
+[![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/scottleibrand/android-uploader?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![Build Status](https://travis-ci.org/nightscout/cgm-remote-monitor.png)](https://travis-ci.org/nightscout/android-uploader)
 
 A community maintained fork of original android uploader.
